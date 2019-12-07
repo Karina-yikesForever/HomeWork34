@@ -5,15 +5,26 @@ import java.util.ArrayList;
 public class Main {
 
     public static void main(String[] args) {
-        ArrayList<String>song=new ArrayList<>();
+        ArrayList<String> song = new ArrayList<>();
+        ArrayList<Integer> song2 = new ArrayList<>();
         song.add("Ветер с моря дул");
-        song.add("\nНагонял беду");
-        song.add("\nИ сказал ты мне");
-        song.add("\nБольше не приду");
+        song.add("Нагонял беду");
+        song.add("И сказал ты мне");
+        song.add("Больше не приду");
+        for(int i=0;i<20;i++){
+         if(i>20){
+            song2.add(i);
+            song2.remove(3);
+         }
+        }
+    System.out.println(song);
         System.out.println(song.size());
-        for(int i=1;i<20;i++)
-            System.out.println(song);
-
+}
         }
 
-    }
+
+
+
+
+
+
